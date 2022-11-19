@@ -1,6 +1,6 @@
 class Application
 
-  def call(env)
+  def call(_env)
     [status, headers, body]
   end
 
@@ -11,7 +11,7 @@ class Application
   end
 
   def headers
-    {'Content-type' => 'plain/text'}
+    { 'Content-Type' => 'text/plain' }
   end
 
   def body
